@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <groupId>org.mif</groupId>
+      
+  <artifactId>microservice_compatibility</artifactId>
+      
+  <packaging>pom</packaging>
+      
+  <version>1.0-SNAPSHOT</version>
+      
+  <name>microservice_compatibility</name>
+      
+  <url>http://maven.apache.org</url>
+      
+  <build>
+            
+    <pluginManagement>
+                  
+      <plugins>
+                        
+        <plugin>
+                              
+          <groupId>org.apache.maven.plugins</groupId>
+                              
+          <artifactId>maven-compiler-plugin</artifactId>
+                              
+          <configuration>
+                                    
+            <source>1.7</source>
+                                    
+            <target>1.7</target>
+                                
+          </configuration>
+                          
+        </plugin>
+                    
+      </plugins>
+              
+    </pluginManagement>
+        
+  </build>
+      
+  <dependencies>
+            
+    <dependency>
+                  
+      <groupId>junit</groupId>
+                  
+      <artifactId>junit</artifactId>
+                  
+      <version>3.8.1</version>
+                  
+      <scope>test</scope>
+              
+    </dependency>
+        
+  </dependencies>
+      
+  <modules>
+    <module>micro-a</module>
+    <module>micro-b</module>
+    <module>micro-c</module>
+    <module>micro-d</module>
+    <module>micro-e</module>
+    <module>micro-f</module>
+  </modules>
+  
+</project>
